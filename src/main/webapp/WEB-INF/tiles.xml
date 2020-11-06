@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+      "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+      "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<!-- Base Define -->
+	<definition name="base.definition"
+		template="/WEB-INF/layouts/classic.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header"
+			value="/WEB-INF/layouts/_header.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/layouts/_menu.jsp" />
+		<put-attribute name="sidebar"
+			value="/WEB-INF/layouts/_listuser.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer"
+			value="/WEB-INF/layouts/_footer.jsp" />
+	</definition>
+
+	<!-- Home Page -->
+	<definition name="Home" extends="base.definition">
+		<put-attribute name="title" value="Home Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/home.jsp" />
+	</definition>
+	<definition name="addTaskPage" extends="base.definition">
+		<put-attribute name="title" value="Home Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/addTaskPage.jsp" />
+	</definition>  <!-- Home Page -->
+	<definition name="addUserPage" extends="base.definition">
+		<put-attribute name="title" value="Home Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/addUserPage.jsp" />
+	</definition>  <!-- Home Page -->
+	<definition name="editUserPage" extends="base.definition">
+		<put-attribute name="title" value="Home Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/editUserPage.jsp" />
+	</definition>  <!-- Home Page -->
+	<definition name="adminPage" extends="base.definition">
+		<put-attribute name="title" value="Home Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/adminPage.jsp" />
+	</definition>
+	<definition name="loginPage" extends="base.definition">
+		<put-attribute name="title" value="Home Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/loginPage.jsp" />
+	</definition>
+	<definition name="messagePage" extends="base.definition">
+		<put-attribute name="title" value="Home Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/messagePage.jsp" />
+	</definition>
+	<definition name="taskPage" extends="base.definition">
+		<put-attribute name="title" value="Home Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/taskPage.jsp" />
+	</definition>
+	<definition name="userInfoPage" extends="base.definition">
+		<put-attribute name="title" value="Home Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/userInfoPage.jsp" />
+	</definition>
+	<definition name="userManagementPage"
+		extends="base.definition">
+		<put-attribute name="title" value="Home Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/userManagementPage.jsp" />
+	</definition>
+	<definition name="403Page" extends="base.definition">
+		<put-attribute name="title" value="Home Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/403Page.jsp" />
+	</definition>
+	<definition name="logoutSuccessfulPage"
+		extends="base.definition">
+		<put-attribute name="title" value="Home Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/logoutSuccessfulPage.jsp" />
+	</definition>
+	<definition name="detailTaskPage" extends="base.definition">
+		<put-attribute name="title" value="Home Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/detailTaskPage.jsp" />
+	</definition>
+	<!-- ContactUs Page -->
+	<definition name="contactusPage" extends="base.definition">
+		<put-attribute name="title" value="Contact Us" />
+		<put-attribute name="body"
+			value="/WEB-INF/bodyfragments/_contactus.jsp" />
+	</definition>
+
+	<definition name="challengePage" extends="base.definition">
+		<put-attribute name="title" value="Home Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/challengePage.jsp" />
+	</definition>
+	<definition name="addChallengePage"
+		extends="base.definition">
+		<put-attribute name="title" value="Home Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/addChallengePage.jsp" />
+	</definition>
+	<definition name="detailChallengePage"
+		extends="base.definition">
+		<put-attribute name="title" value="Home Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/detailChallengePage.jsp" />
+	</definition>
+	
+</tiles-definitions>
